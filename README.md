@@ -6,9 +6,9 @@ profiles, and settings untouched.
 
 ## Features
 
-- **Full block** — Visiting a post, reel, or Channels page shows a calm
+- **Full block** — Visiting a post, reel, or Channels page shows an
   overlay instead of the content, with quick links to Inbox or Home
-- **Feed & Explore hiding** — Feed posts, reel trays, and Explore tiles are
+- **Feed & Explore hiding** — Feed posts, reels, and Explore tiles are
   hidden and replaced with a placeholder; stories stay visible
 - **Optional search hiding** — A separate toggle hides the search bar
 - **One master switch** — Turn the whole extension on or off from the popup
