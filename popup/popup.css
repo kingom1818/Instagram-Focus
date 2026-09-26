@@ -1,0 +1,135 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #FFFFFF;
+  color: #262626;
+}
+
+.popup {
+  padding: 20px;
+}
+
+.popup__header {
+  margin-bottom: 18px;
+}
+
+.popup__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+}
+
+.popup__logo {
+  display: block;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.popup__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.popup__subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: #737373;
+}
+
+.popup__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 0 12px;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2px;
+  transition: opacity 0.15s ease;
+}
+
+.toggle-row--inactive {
+  opacity: 0.5;
+}
+
+.toggle-row__label {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.popup__hint {
+  margin: 2px 2px 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #3B3B3B;
+}
+
+/* Native <button>-based switch — keyboard-operable and tabbable by default. */
+.switch {
+  appearance: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 24px;
+  border-radius: 999px;
+  background: #d9d9d9;
+  position: relative;
+  flex-shrink: 0;
+  transition: background-color 0.15s ease;
+}
+
+.switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease;
+}
+
+.switch--on {
+  background: #004CFF;
+}
+
+.switch--on .switch__thumb {
+  transform: translateX(16px);
+}
+
+.switch:focus-visible {
+  outline: 2px solid #004CFF;
+  outline-offset: 2px;
+}
+
+.popup__status {
+  margin-top: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: #15BC31;
+}
+
+.popup__status--paused {
+  color: #CD0404;
+}

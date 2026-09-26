@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Focus",
+  "version": "1.0.0",
+  "description": "Blocks distracting Instagram content (posts, reels, Explore, Channels) while preserving messages, stories, profiles, and settings.",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Instagram Focus"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*",
+        "https://instagram.com/*"
+      ],
+      "js": ["content/content.js"],
+      "css": ["content/blocker.css"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}

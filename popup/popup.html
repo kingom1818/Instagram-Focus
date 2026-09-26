@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Instagram Focus</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="popup">
+    <header class="popup__header">
+      <div class="popup__brand">
+        <img class="popup__logo" src="../icons/icon48.png" alt="" width="28" height="28" />
+        <h1 class="popup__title">Instagram Focus</h1>
+      </div>
+      <p class="popup__subtitle">Block distracting Instagram content</p>
+    </header>
+
+    <section class="popup__controls" aria-label="Settings">
+      <div class="toggle-row">
+        <label class="toggle-row__label" id="label-extension" for="toggle-extension">
+          Extension
+        </label>
+        <button
+          type="button"
+          class="switch"
+          id="toggle-extension"
+          role="switch"
+          aria-checked="true"
+          aria-labelledby="label-extension"
+        >
+          <span class="switch__thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="toggle-row" id="row-search">
+        <label class="toggle-row__label" id="label-search" for="toggle-search">
+          Hide search bar
+        </label>
+        <button
+          type="button"
+          class="switch"
+          id="toggle-search"
+          role="switch"
+          aria-checked="false"
+          aria-labelledby="label-search"
+        >
+          <span class="switch__thumb" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="popup__hint" id="search-hint">
+        Explore posts and reels stay blocked either way.
+      </p>
+    </section>
+
+    <footer class="popup__status" id="status" role="status" aria-live="polite">
+      Focus mode active
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
