@@ -1,8 +1,8 @@
 # Instagram Focus
 
 A minimal browser extension that blocks distracting Instagram content —
-posts, reels, Explore, and Channels — while leaving messages, stories,
-profiles, and settings untouched.
+posts, reels, Explore, and Channels- while leaving messages, stories,
+profiles and settings untouched.
 
 ## Features
 
@@ -23,7 +23,7 @@ profiles, and settings untouched.
 
 ## How it works
 
-- Runs entirely as a content script on `instagram.com` — no network requests.
+- Runs entirely as a content script on `instagram.com` - no network requests.
 - Watches for route changes and DOM mutations to catch client-side
   navigation and infinite scroll.
 - Uses semantic structure (`<main>`, `<article>`, href patterns) instead of
@@ -33,4 +33,3 @@ profiles, and settings untouched.
 
 - All data stays local — no external servers, no tracking, no analytics.
 - Doesn't read or modify your Instagram account data.
-- Only permission requested is `storage`, for saving your toggle settings.
